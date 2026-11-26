@@ -26,3 +26,15 @@ Manual account provisioning and deprovisioning in Active Directory often lead to
 
 ```powershell
 .\Invoke-ADLifecycle.ps1 -Mode Onboard -CsvPath .\samples\onboarding.sample.csv -WhatIf
+```
+### 2. Execute Onboarding
+
+```powershell
+.\Invoke-ADLifecycle.ps1 -Mode Onboard -CsvPath .\samples\onboarding.sample.csv -LogPath .\logs\lifecycle.log
+```
+### 3. Simulate & Execute Offboarding
+
+```powershell
+.\Invoke-ADLifecycle.ps1 -Mode Offboard -CsvPath .\samples\offboarding.sample.csv -WhatIf
+.\Invoke-ADLifecycle.ps1 -Mode Offboard -CsvPath .\samples\offboarding.sample.csv -LogPath .\logs\lifecycle.log
+```
