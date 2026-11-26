@@ -1,1 +1,3 @@
 
+SamAccountName,ArchiveOU
+m.rossi,"OU=DisabledUsers,OU=Offboarding,DC=corp,DC=local"
